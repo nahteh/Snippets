@@ -1,6 +1,11 @@
 // Nate repository
 #pragma once
 #include "DrawDebugHelpers.h"
+
+UCLASS()
+class SLASH_API AItem : public AActor
+{
+	GENERATED_BODY()
 /* 
   ___ ___                     .___            
  /   |   \   ____ _____     __| _/___________ 
@@ -124,4 +129,5 @@ float AItem::TransformedSine(float Value)
 float AItem::TransformedCos(float Value)
 {
 	return Amplitude * FMath::Cos(Value * PeriodConstant);
+}
 }
